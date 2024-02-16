@@ -17,7 +17,8 @@ function addEmployee() {
 
   employees.push(employee);
   console.log('Employee added:', employee);
-  document.getElementById('employeeForm').reset();
+  alert("Employee added!");
+  document.getElementById('employeeForm').clear();
 
 }
 
@@ -70,6 +71,7 @@ function editEmployee() {
     } else {
       console.log('Employee not found with ID:', empId);
     }
+    alert("Employee details edited!");
   }
 // Function to view all employee details
 function viewEmployees() {
